@@ -1,21 +1,22 @@
-Thanks for your message!
-
 <?php
+    $name = $_POST['name'];
+    $visitor_email = $_POST['email'];
+    $message = $_POST['message'];
 
-    $userName          = $_POST['myName'];
-    $userEmail         = $_POST['myEmail'];
-    $userMessage       = $_POST['myMessage'];
+    $email_from = 'dijana.cveticanin@gmail.com';
 
+    $email_subject = "New Form Submission";
 
-    $to                = "dijana.cveticanin@gmail.com";
-    $subject           = "Email from my website";
-    $body              = "Information Submitted";
+    $email_body = "User name: $name.\n". 
+                    "User Email: $visitor_email.\n". 
+                    "User Message: $message.\n";
 
+    $to = "dijana.cveticanin@gmail.com";
 
-    $body .= "\r\n Name: " . $userName;
-    $body .= "\r\n Email: " . $userEmail;
-    $body .= "\r\n Message: " . $userMessage;
+    $headers = "From: $email_from \r\n";
+    $headers .= "Reply-To: $visitor_email \r\n";
+    
+    mail($to, $email_subject, $email_body, $headers);
 
-    mail($to, $subject, $body);
-
+    location("Location: index.html");
 ?>

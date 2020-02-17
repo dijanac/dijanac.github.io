@@ -78,31 +78,32 @@
             <div id="content" class="col-sm-12">
 
                 <section class="main-content">
-                    <p class="lead">Have any questions? Feel free to get in touch with me!</p>
+					<p class="lead">Have any questions? Feel free to get in touch with me!</p>
+					
 					<form role="form" class="clearfix" method="POST" action="send.php">
-					<div class="row">
-						<div class="col-sm-6">
-							<div class="form-group">
-								<label for="contact-name" class="sr-only">Name</label>
-								<input type="text" name="myName" class="form-control input-lg" placeholder="Your name" required>
+						<div class="row">
+							<div class="col-sm-6">
+								<div class="form-group">
+									<label for="contact-name" class="sr-only">Name</label>
+									<input type="text" name="name" class="form-control input-lg" placeholder="Your name" required>
+								</div>
 							</div>
-						</div>
 
-						<div class="col-sm-6">
-							<div class="form-group">
-								<label for="contact-email" class="sr-only">Email</label>
-								<input type="text" name="myEmail" class="form-control input-lg" placeholder="Your email" required>
+							<div class="col-sm-6">
+								<div class="form-group">
+									<label for="contact-email" class="sr-only">Email</label>
+									<input type="email" name="email" class="form-control input-lg" placeholder="Your email" required>
+								</div>
 							</div>
-						</div>
 
-						<div class="col-sm-12">
-							<div class="form-group">
-								<label for="contact-words" class="sr-only">Message</label>
-								<textarea cols="40" rows="5" name="myMessage" class="form-control input-lg" placeholder="Your message"></textarea>
+							<div class="col-sm-12">
+								<div class="form-group">
+									<label for="contact-words" class="sr-only">Message</label>
+									<textarea cols="40" rows="5" name="message" class="form-control input-lg" placeholder="Your message" required></textarea>
+								</div>
 							</div>
 						</div>
-					</div>
-					<input type="submit" value="Send" class="btn btn-info btn-lg pull-right" />
+						<input type="submit" value="Send" class="btn btn-info btn-lg pull-right" />
 					</form>
                 </section>
 
