@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Portfolio site">
+    <meta name="author" content="Dijana Cveticanin">
+	
+	<title>Dijana Cveticanin | Portfolio</title>
+	
+	<!-- Bootstrap core CSS -->
+	<link href="assets/css/bootstrap.min.css" rel="stylesheet">
+	
+	<!-- Font Awesome Icons -->
+	<link href="assets/css/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+	<link href="assets/css/font-awesome/css/font-awesome-ie7.min.css" rel="stylesheet">
+	
+	<!-- Custom CSS -->
+	<link href="assets/css/custom.css" rel="stylesheet">
+	
+	<!-- Google Fonts -->
+	<link href='http://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css'>
+	
+	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+</head>
+
+<body class="single">
+
+	<header class="site-header" role="banner">
+		
+		<div class="navbar-wrapper">
+			
+			<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+				<div class="container">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+					</div>
+					<div class="navbar-collapse collapse">
+						<ul class="nav navbar-nav navbar-right">
+							<li><a href="index.html">Home</a></li>
+							<li class="active"><a href="blog.html">Blog</a></li>
+							<li><a href="contact.html">Contact</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+    
+    <div class="container">
+	    <div class="row" id="primary">
+		    <div id="content" class="col-sm-8 col-sm-offset-2">
+		    	<article class="post">
+		    		<header>
+		    			<h1>Kako instalirati WordPress plugin?</h1>
+		    			<div class="post-details">
+		    				<i class="fa fa-user"></i>Dijana Cveticanin 
+		    				<i class="fa fa-clock-o"></i> <time>13.01.2020</time>
+		    			</div>
+		    		</header>
+		    		<div class="post-image">
+		    			<img src="assets/img/plugin-img.png" class="post-img">
+		    		</div>
+		    		<div class="post-body">
+		    			<p>Nakon što instaliramo WordPress, prva stvar koja treba da se nauči jeste kako instalirati WordPress plugin (u daljem tekstu dodatak).  Dodaci nam omogućavaju da dodajemo nove funkcije u WordPress, kao što su dodavanje galerija, slideshow-a, itd. Postoje hiljade besplatnih i plaćenih dodataka za WordPress. Ovde ćemo, korak po korak da prođemo kako da instalirate WordPress dodatak.</p>
+
+						<h4>Pre nego što počnemo!!!</h4>
+						<p>Ukoliko koristite WordPress.com, ne možete da instalirate dodatak. To je zato što oni imaju ograničenja. Ne možete da instalirate dodatak, osim ako ne nadogradite vaš business plan.</p>
+
+						<h4>Kako instalirati WordPress plugin(dodatak)?</h4>
+
+						<p>Postoje tri načina na koje možemo da instaliramo dodatak. A to su: Instaliranje dodatka preko pretrage, Upload dodatka i ručno instaliranje koristeći FTP.</p>
+                        
+                        <h4>Instaliranje dodatka koristeći WordPress Plugin pretragu(search)</h4>
+                        <p></p>
+                        
+						<h3>Korak 1. Instalacija WAMP-a na Windows računaru</h3>
+						<p>Prvo što treba da uradite jeste da preuzmete WAMP i instalirate ga na vaš računar. Jednostavno, posetite <a href="http://www.wampserver.com/en/">WampServer web sajt</a> i kliknete na <strong>"Start Using Wamp Server"</strong></p>
+						<div class="post-image">
+							<img src="assets/img/wamp-img.jpg" class="post-img">
+						</div>
+						<p>Videćete dve verzije ovde: <strong>WampServer 32-bitni i WampServer 64-bitni</strong>. Trebate da selektujete verziju koja se podudara sa operativnim sistemom na vašem računaru.</p>
+						<div class="post-image">
+							<img src="assets/img/version-wamp.jpg" class="post-img">
+						</div>
+						<p>Da biste saznali da li koristite 32 ili 64-bitni operativni sistem, idite na <strong>Control Panel >> System and Security >> System</strong>. Tamo ćete pronaći verziju operativnog sistema.</p>
+						<div class="post-image">
+							<img src="assets/img/os-img.jpg" class="post-img">
+						</div>
+						<p>Nakon preuzimanja, kliknite na fajl da biste pokrenuli instalaciju. Obavezno pratite uputstva za instalaciju.</p>
+						<div class="post-image">
+							<img src="assets/img/inst-img.jpg" class="post-img">
+						</div>
+						<p>Tokom instalacije, morate da definišete lokaciju za web pretraživač. Podrazumevano će biti Internet Explorer. nakon instalacije, možete pokrenuti WampServer da biste nastavili.</p>
+
+						<h3>Korak 2. Podešavanje baze podataka za lokalnu instalaciju WordPress-a</h3>
+
+						<p>Sledeća stvar koju treba da uradite je da kreirate praznu MySQL bazu podataka. Kada pokrenete WAMP, u donjem desnom uglu ćete videti zelenu ikonicu WampServer-a. Kliknite na nju, a zatim kliknite na <strong>phpMyAdmin</strong>(Web aplikacija za upravljanje MySQL bazama podataka) </p> <br>
+						<p> <strong>Napomena:</strong> Ako je ikonica WampServer-a crvena ili žuta, to znači da servisi (Apache, MySQL, PHP) nisu pokrenuti. Morate pokrenuti servise, klikom na ikonicu pre podešavanja baze podataka.</p>
+						<div class="post-image">
+							<img src="assets/img/admin-img.jpg" class="post-img">
+						</div>
+						<p>Prebaciće vas na phpMyAdmin prijavu. Jednostavno unesite korisničko ime: <strong>root</strong> i polje za lozinku ostavite prazno. Ovo su podrazumevani kredencijali za prijavu na localhost phpMyAdmin.</p>
+						<div class="post-image">
+							<img src="assets/img/login-admin.jpg" class="post-img">
+						</div>
+						<p>Kliknite na dugme <strong>"GO</strong> da biste nastavili. </p> <br>
+						<p>Kada se ulogujete, treba da kliknete na <strong>Databases</strong> da kreirate novu bazu podataka za WordPress. Pitaće vas da izaberete ime za vašu novu bazu, nakon toga kliknite na dugme <strong>"Create"</strong> </p>
+						<div class="post-image">
+							<img src="assets/img/db-img.jpg" class="post-img">
+						</div>
+						<p>Vaša baza podataka je spremna, što znači da sada možete instalirati WordPress na lokalu.</p>
+
+						<h3>Korak 3. Instalacija WordPress-a na Windows-u koristeći WAMP</h3>
+
+						<p>Sledeća stvar koju treba da uradite, jeste da preuzmete poslednju verziju WordPress-a sa <a href="https://wordpress.org/">WordPress sajta</a>. Biće preuzeto kao zip fajl.</p>
+						<div class="post-image">
+							<img src="assets/img/wp-img.jpg" class="post-img">
+						</div>
+						<p>Treba da "otpakujete" fajlove i kopirate u "wordpress" folder.</p>
+						<div class="post-image">
+							<img src="assets/img/extractwp.jpg" class="post-img">
+						</div>
+						<p>Sada treba da dođete do foldera gde ste instalirali WAMP. <br> 
+						Ako ste pratili ove korake, instalirali ste WAMP u C:\wamp64 <br> Ali, imajte na umu da se putanja može razlikovati, u zavisnosti gde ste vi instalirali. 
+						Nalepite vaš <strong>"wordpress"</strong> folder u <strong>C:\wamp64\www</strong> folder. </p>
+						<div class="post-image">
+							<img src="assets/img/pastewp.jpg" class="post-img">
+						</div>
+						<p>Možete preimenovati vaš folder, da se naziva kako god vi želite. To će biti URL vašeg lokalnog WordPress sajta, tako da izaberite nešto čega ćete se lako setiti.</p>
+						<p>Za ovaj tutorial, preimenovaćemo folder "wordpress" u "mysite"</p>
+						<p>Zatim otvorite vaš web pretraživač i kucajte <strong>localhost/mysite</strong> </p>
+						<div class="post-image">
+							<img src="assets/img/dbinfo.jpg" class="post-img">
+						</div>
+						<p>Nakon toga treba da unesete informacije vezane za bazu podataka, kao što su: database name, username, password, host i table prefix</p>
+						<div class="post-image">
+							<img src="assets/img/dbdetails.jpg" class="post-img">
+						</div>
+						<p>Kliknite na dugme <strong>Submit</strong> i WordPress će kreirati konfiguracioni fajl za vas. </p>
+						<p>Zatim kliknite na dugme <strong>"Run the installation"</strong> </p>
+						<div class="post-image">
+							<img src="assets/img/runtheinstall.jpg" class="post-img">
+						</div>
+						<p>Dolazimo do ekrana dobrodošlice. Dodajte naslov za vaš WordPress sajt, izaberite korisničko ime administratora i čvrstu lozinku, kao u email administratora.</p>	
+						<p>Kada ste spremni, kliknite <strong>"Install WordPress"</strong> dugme. </p>
+						<div class="post-image">
+							<img src="assets/img/welcomewp.jpg" class="post-img">
+						</div>
+						<p>Nakon što je instalacioni proces uspešno završen, videćete Success! poruku. Možete da nastavite tako što ćete se prijaviti klikom na dugme <strong>"Log In"</strong> </p>
+						<div class="post-image">
+							<img src="assets/img/login.jpg" class="post-img">
+						</div>
+		    		</div>
+		    	</article>
+		    </div>
+	    </div>
+    </div>
+
+	<footer>
+		<div class="container">
+			<div class="col-sm-5">
+				<nav>
+					<ul class="list-unlisted list-inline">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="blog.html">Blog</a></li>
+						<li><a href="contact.html">Contact</a></li>
+					</ul>
+				</nav>
+			</div>
+			<div class="col-sm-4">
+				<a href="https://twitter.com/dijana_ns" target="_blank" class="badge social twitter"><i class="fa fa-twitter"></i></a>
+				<a href="https://www.linkedin.com/in/dijana-cveticanin/" target="_blank" class="badge social linkedin"><i class="fa fa-linkedin"></i></a>
+			</div>
+	
+			<div class="col-sm-3">
+				<p class="pull-right">
+					&copy; 2020 Dijana Cveticanin  
+				</p>
+			</div>
+		</div>
+	</footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="assets/js/jquery-2.1.1.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    
+    <script src="assets/js/main.js"></script>
+  
+</body>
+</html>
